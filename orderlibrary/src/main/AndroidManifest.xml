@@ -5,6 +5,7 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true">
+        <!-- order组件虽然作为lib组件，但是也包含外部调用的activity，故需要在这里申明 -->
         <activity android:name=".OrderActivity"/>
     </application>
 

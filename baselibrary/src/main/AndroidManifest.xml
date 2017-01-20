@@ -26,5 +26,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true">
     </application>
+    <!-- 对于不需要编译成apk的lib组件，如果没有外部调用的activity时，是不需要activity声明的 -->
 
 </manifest>

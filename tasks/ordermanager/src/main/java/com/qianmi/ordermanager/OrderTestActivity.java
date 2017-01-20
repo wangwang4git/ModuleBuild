@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+// 依赖base组件
 import com.qianmi.baselibrary.BaseActivity;
+// 依赖order组件
 import com.qianmi.small.orderlibrary.OrderActivity;
 
 

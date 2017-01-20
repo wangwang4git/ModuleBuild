@@ -1,4 +1,5 @@
 //apply plugin: 'com.android.application'
+// lib组件插件
 apply plugin: 'com.android.library'
 
 android {
@@ -23,6 +24,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    // 依赖base组件
     compile project(':baselibrary')
 
 }

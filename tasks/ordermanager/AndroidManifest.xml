@@ -10,6 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!-- 测试工程，需要声明一个默认activity -->
         <activity android:name=".OrderTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+// 依赖base组件，相关类在这里声明
 import com.qianmi.baselibrary.AppConfig;
 import com.qianmi.baselibrary.BaseActivity;
 import com.qianmi.baselibrary.utils.ToastUtil;
@@ -51,6 +52,7 @@ public class OrderActivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View v) {
         if (v.getId() == R.id.btnGotoPoint) {
             try {
+                // 跳转到另外一个组件的activity
                 Intent intent = getStartActivityIntent(AppConfig.PointManagerModuleActivity);
                 startActivity(intent);
             } catch (ActivityNotFoundException e) {

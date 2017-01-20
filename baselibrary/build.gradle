@@ -1,4 +1,5 @@
 //apply plugin: 'com.android.application'
+// 基础lib组件，插件声明为library
 apply plugin: 'com.android.library'
 apply plugin: 'android-apt'
 

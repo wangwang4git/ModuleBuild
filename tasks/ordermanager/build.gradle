@@ -1,3 +1,4 @@
+// 专门用于测试order组件的app组件，声明插件
 apply plugin: 'com.android.application'
 //apply plugin: 'com.android.library'
 
@@ -7,6 +8,7 @@ android {
 
     sourceSets {
         main {
+            // 这里的声明是干啥的？
             manifest.srcFile 'AndroidManifest.xml'
         }
     }
@@ -20,6 +22,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    
+    // 依赖base组件
     compile project(':baselibrary')
+    // 既然是为了测试order组件的工程，依赖order组件
     compile project(':orderlibrary')
 }

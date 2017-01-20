@@ -1,4 +1,2 @@
-
-
-
+// 声明工程包含的组件，除app外，其他都是lib组件
 include ':app', ':baselibrary', ':tasks:ordermanager', ':tasks:pointmanager', ':orderlibrary'

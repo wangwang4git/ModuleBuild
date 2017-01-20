@@ -1,5 +1,8 @@
+// 对于app组件需要构建输出apk，依赖的gradle插件是application
 apply plugin: 'com.android.application'
 //apply plugin: 'com.android.library'
+// butterknife依赖注解处理
+apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 23
@@ -24,9 +27,10 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile fileTree(dir: 'libs', include: ['*.jar'])
 
-//    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    
     compile project(':baselibrary')
     compile project(':orderlibrary')       //订单管理组件
     compile project(':tasks:pointmanager')  //网点管理组件
